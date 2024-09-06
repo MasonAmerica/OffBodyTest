@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp" >
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_hr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:text="HR: -" />
+
+    <TextView
+        android:id="@+id/tv_acc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/tv_hr"
+        android:inputType="textMultiLine"
+        android:text="Acc: 0" />
+
+    <TextView
+        android:id="@+id/tv_proximity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/tv_acc"
+        android:inputType="textMultiLine"
+        android:text="Prox: 0" />
+
+    <TextView
+        android:id="@+id/tv_offbody_enhanced"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/tv_proximity"
+        android:inputType="textMultiLine"
+        android:text="OFBE: 0" />
+
+    <TextView
+        android:id="@+id/tv_calibration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/tv_offbody_enhanced"
+        android:inputType="textMultiLine"
+        android:text="Calib : 0" />
+
+    <com.jjoe64.graphview.GraphView
+        android:id="@+id/idGraphView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_hr"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentTop="true" />
+
+</RelativeLayout>

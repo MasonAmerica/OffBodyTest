@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/allowSounds"
+        android:title="Sounds on"
+        android:checkable="true"
+        android:checked="false"/>
+    <item android:id="@+id/calibratePPG"
+    android:title="Calibrate PPG" />
+    <item android:id="@+id/restartPPG"
+        android:title="Sensors On"
+        android:checked="true"
+        android:checkable="true"/>
+</menu>
